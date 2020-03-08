@@ -1,0 +1,478 @@
+@charset "utf-8";
+/*
+Theme Name: gourmetfes
+Theme URL: テーマのURI
+Description: gourmetfes theme
+Author: WD2
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: テーマのライセンスのURI
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* layout */
+body {
+  font-family: heisei-maru-gothic-std, sans-serif;
+}
+h1, h2 {
+	font-family: address-sans-pro;
+}
+h1 span, h2 span {
+	font-family: heisei-maru-gothic-std, sans-serif;
+}
+.content {
+	width: 100%;
+	height: 100vh;
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+	background-attachment: fixed;
+}
+.nondisplaysp {
+	display: block;
+}
+.displaysp {
+	display: none;
+}
+a {
+	color: black;
+	text-decoration: none;
+}
+a:hover {
+	color: #808080;
+	text-decoration: none;
+}
+
+/* #wrapper */
+#wrapper{
+	text-align: center;
+}
+
+/* header */
+header {
+	background-color: #fff000;
+	position: relative;
+}
+header h1 {
+	font-size: 62px;
+	line-height: 80px;
+	padding-top: 83px;
+}
+header ul#headsns {
+	position: absolute;
+	top: 104px;
+	right: 25%;
+}
+header ul#headsns li {
+	display: inline-block;
+	padding-right: 31px;
+}
+header ul#headnav {
+	font-size: 26px;
+	line-height: 27px;
+	padding-top: 62px;
+	padding-bottom: 83px;
+}
+header ul#headnav li {
+	display: inline-block;
+	padding-right: 32px;
+}
+header ul#headnav li:last-child {
+	padding-right: 0;
+}
+header ul#headnav li:after {
+	padding-left: 44px;
+	content: "/";
+	display: inline-block;
+}
+/* #headnavのスラッシュ部分を背景画像にした場合 */
+/* header ul#headnav li:after {
+	content: "";
+    padding-left: 44px;
+    display: inline-block;
+    width: 0px;
+    height: 32px;
+    vertical-align: middle;
+    background: url(images/star.png);
+    background-size: 19px 19px;
+    margin-left: 19px;
+    background-position-x: right;
+    background-repeat: no-repeat;
+} */
+header ul#headnav li:last-child:after {
+	content: "";
+}
+
+/* #headscroll */
+#headscroll {
+    margin: 0 auto;
+    width: 100%;
+    height: 542px;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+}
+#headscroll ul {
+    height: 542px;
+    float: left;
+    display: inline;
+    overflow: hidden;
+}
+#headscroll ul li {
+    width: 1424px;
+    height: 542px;
+    float: left;
+    display: inline;
+    overflow: hidden;
+}
+#headscroll ul:after {
+    content: ".";
+    height: 0;
+    clear: both;
+    display: block;
+    visibility: hidden;
+}
+#headscroll ul {
+    display: inline-block;
+    overflow: hidden;
+}
+
+/* #about */
+#about h2 {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	font-size: 100px;
+}
+#about h2 span {
+	font-size: 49px;
+}
+#about p#aboutp01 {
+	color: #bc005e;
+	font-size: 27px;
+	line-height: 30px
+}
+#about p#aboutp02 {
+	font-size: 22px;
+	line-height: 26px;
+	padding-top: 54px;
+	padding-bottom: 108px;
+}
+#about #aboutnav {
+	padding-bottom: 115px;
+}
+#about #aboutnav ul {
+	letter-spacing: -.4em;
+}
+#about #aboutnav ul li {
+	display: inline-block;
+	letter-spacing: normal;
+	width: 33.33%;
+	height: 429px;
+	padding: 0;
+	font-size: 33px;
+}
+#about #aboutnav ul li a {
+	width: 100%;
+}
+#about #aboutnav ul li a img {
+	border: 8px solid #000000;
+	border-radius: 20px;
+	margin-bottom: 33px;
+}
+
+/* #news */
+#news h2 {
+	font-size: 80px;
+	line-height: 60px;
+}
+#news h2 span {
+	font-size: 35px;
+}
+#news ul {
+	padding-top: 80px;
+}
+#news ul li {
+	width: 871px;
+	font-size: 22px;
+	line-height: 41px;
+	text-align: left;
+	margin: 0 auto;
+}
+#news ul li p {
+	display: inline-block;
+}
+#news ul li p:first-child {
+	width: 219px;
+	text-align: left;
+	vertical-align: top;
+}
+#news ul li p a {
+	text-decoration: underline;
+}
+#news ul li:last-child {
+	border: none;
+	text-align: center;
+}
+#news ul li a#past {
+	font-size: 27px;
+	width: 216px;
+	display: block;
+	text-align: center;
+	margin: 100px auto;
+}
+
+/* #tenant */
+#tenant {
+	background-color: #fff000;
+	border-top: 8px solid #000000;
+	border-bottom: 8px solid #000000;
+}
+#tenant h2 {
+	font-size: 80px;
+	padding-top: 70px;
+}
+#tenant h2 span {
+	font-size: 35px;
+}
+#tenant #tenantall {
+	width: 70%;
+	margin: 0 auto;
+}
+#tenant #tenantall .sortControl .cond1 {
+	letter-spacing: -.4em;
+	text-align: left;
+}
+#tenant #tenantall .sortControl .cond1 li {
+	display: inline-block;
+	width: 13.2%;
+	letter-spacing: normal;
+	margin: 0.5%;
+	text-align: center;
+}
+#tenant #tenantall .sortControl .cond1 li input[type="checkbox"] {
+  display: none;
+}
+#tenant #tenantall .itemList {
+	letter-spacing: -.4em;
+	text-align: left;
+}
+#tenant #tenantall .itemList .col {
+	display: inline-block;
+	width: 18%;
+	letter-spacing: normal;
+	height: 378px;
+	margin: 1%;
+}
+.itemList .col.active{
+	/* animation: show 0.3s ease 0s; */
+}
+.itemList .col[class*="shopcategory01"]{
+	background: #ff7fbf;
+}
+.itemList .col[class*="shopcategory02"]{
+	background: #bf7fff;
+}
+.itemList .col[class*="shopcategory03"]{
+	background: #7fbfff;
+}
+.itemList .col[class*="shopcategory04"]{
+	background: #7fffbf;
+}
+.itemList .col[class*="shopcategory05"]{
+	background: #bfff7f;
+}
+.itemList .col[class*="shopcategory06"]{
+	background: #ffff7f;
+}
+#tenant a#tenantmore {
+	font-size: 30px;
+}
+
+/* #event */
+#event h2 {
+	font-size: 80px;
+	padding-top: 70px;
+	padding-bottom: 78px;
+}
+#event h2 span {
+	font-size: 35px;
+}
+#event ul {
+	letter-spacing: -.4em;
+	width: 90%;
+	margin: 0 auto;
+}
+#event ul li {
+	display: inline-block;
+	letter-spacing: normal;
+	width: 50%;
+	padding: 0;
+	font-size: 33px;
+	position: relative;
+}
+#event ul li a {
+	width: 100%;
+}
+#event ul li a img {
+	border: 8px solid #000000;
+	border-radius: 20px;
+	margin-bottom: 33px;
+	width: 700px;
+}
+#event ul li a p {
+	position: absolute;
+	top: calc(50% - 32px);
+	left: 0;
+	right: 0;
+}
+
+/* #accessface */
+#accessface h2 {
+	font-size: 80px;
+	padding-top: 70px;
+	padding-bottom: 78px;
+}
+#accessface h2 span {
+	font-size: 35px;
+}
+#accessface ul {
+	letter-spacing: -.4em;
+	width: 80%;
+	margin: 0 auto;
+}
+#accessface ul li {
+	display: inline-block;
+	letter-spacing: normal;
+	width: 50%;
+	padding: 0;
+	font-size: 33px;
+	position: relative;
+}
+#accessface ul li a {
+	width: 100%;
+}
+#accessface ul li a img {
+	border: 8px solid #000000;
+	border-radius: 20px;
+	margin-bottom: 33px;
+	width: 600px;
+}
+
+/* #instagram */
+#instagram h2 {
+	font-size: 80px;
+	padding-top: 70px;
+	padding-bottom: 78px;
+}
+#instagram h2 span {
+	font-size: 35px;
+}
+#instagram h2 span:nth-child(2) {
+	font-size: 29px;
+}
+
+/* #sponsor */
+#sponsor h2 {
+	font-size: 80px;
+	padding-top: 70px;
+	padding-bottom: 78px;
+}
+#sponsor h2 span {
+	font-size: 35px;
+}
+#sponsor ul {
+	letter-spacing: -.4em;
+	width: 90%;
+	margin: 0 auto;
+}
+#sponsor ul li {
+	display: inline-block;
+	letter-spacing: normal;
+	padding: 0;
+	font-size: 33px;
+	position: relative;
+}
+#sponsor ul li.largeimg {
+	width: 33%;
+}
+#sponsor ul li.smallimg {
+	width: 25%;
+}
+#sponsor ul li a {
+	width: 100%;
+}
+#sponsor ul li a img {
+	border-radius: 20px;
+	margin-bottom: 33px;
+}
+#sponsor ul li.largeimg a img {
+	width: 480px;
+}
+#sponsor ul li.smallimg a img {
+	width: 350px;
+}
+
+
+/* これ以下見切れでいける？pxは仮
+	いくつを基準にするかで上のピクセル変更
+ */
+@media (min-width: 768px) {
+
+}
+@media (min-width: 1024px) {
+
+}
+@media (min-width: 1440px) {
+
+}
+@media (min-width: 1920px) {
+
+}
