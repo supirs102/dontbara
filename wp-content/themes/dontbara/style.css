@@ -80,6 +80,71 @@ a {
 a:hover {
 	text-decoration: none;
 }
+.clearfix:after {
+content: " ";
+display: block;
+height: 0;
+clear: both;
+visibility: hidden;
+}
+
+/* 左右背景 */
+#effect_content {
+	height: 1000px;
+}
+#effect_contents01{
+    width: 108px;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(images/しずく.png) ;
+    background-position: center;
+    /*画像のサイズを指定する*/
+    -webkit-background-size: 256px 256px;
+     background-size:  256px 256px;
+     /* animation:アニメーション名 , アニメーションの時間 , アニメーションのタイミング , アニメーションの繰り返し */
+     -webkit-animation: bgscroll01 10s linear infinite;
+     animation: bgscroll01 10s linear infinite;
+
+}
+#effect_contents02{
+    width: 108px;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url(images/しずく.png) ;
+    background-position: center;
+    /*画像のサイズを指定する*/
+    -webkit-background-size: 256px 256px;
+     background-size:  256px 256px;
+     /* animation:アニメーション名 , アニメーションの時間 , アニメーションのタイミング , アニメーションの繰り返し */
+     -webkit-animation: bgscroll02 10s linear infinite;
+     animation: bgscroll02 10s linear infinite;
+
+}
+/*アニメーションの指定
+background-position: x軸 , y軸;
+今回は縦にスクロールする
+背景画像のサイズ分移動させる
+*/
+@-webkit-keyframes bgscroll01 {
+ 0% {background-position: 0 256px;}
+ 100% {background-position: 0 0;}
+}
+@keyframes bgscroll01 {
+ 0% {background-position: 0 256px;}
+ 100% {background-position: 0 0;}
+}
+@-webkit-keyframes bgscroll02 {
+ 0% {background-position: 0 0;}
+ 100% {background-position: 0 256px;}
+}
+@keyframes bgscroll02 {
+ 0% {background-position: 0 0;}
+ 100% {background-position: 0 256px;}
+}
 
 /* #wrapper */
 #wrapper{
