@@ -3,10 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="content-language" content="ja">
-	<meta name="description" content="諫早グルメフェスティバル２０２０　人気の３８店舗による「諫早グルメの祭典」！！">
+	<meta name="description" content="どんばら">
 	<meta name="keywords" content="">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,user-scalable=no">
-	<title>諫早グルメフェスティバル２０２０</title>
+	<title>どんばら</title>
 	<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/jquery-scrollify@1/jquery.scrollify.min.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
