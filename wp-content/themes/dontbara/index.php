@@ -3,10 +3,10 @@
 	<p>中身</p>
 </div><!-- #wrapper -->
 
-<div id="nav-toggle">
+<div id="nav-toggle" class="push-button">
     MENU
 </div>
-<div id="gloval-nav" class="gloval-div">
+<div id="gloval-nav">
     <nav>
         <ul id="navigation01">
             <li><a href="#">I WANTED IS KICK</a></li>
@@ -30,12 +30,7 @@
         </ul>
     </nav>
 </div>
-<div id="gloval-close" class="gloval-div">
-    <nav>
-        <ul id="navigation-close">
-            <li><a href="#">Close</a></li>
-        </ul>
-    </nav>
+<div id="gloval-close" class="push-button">
 </div>
 <div id="container">
   <h1>Full Screen Hamburger Menu 02</h1>

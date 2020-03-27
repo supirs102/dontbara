@@ -168,12 +168,24 @@ h1 {
   height: 32px;
   cursor: pointer;
 }
-#nav-toggle.open {
-  content: 'Close';
-}
 /* z-index */
 #nav-toggle {
-  z-index: 1000;
+  /* z-index: 1000; */
+  z-index: 900;
+}
+#gloval-close {
+  z-index: 999;
+  position: fixed;
+  -webkit-transform: translateY(100vh);
+          transform: translateY(100vh);
+  -webkit-transition: -webkit-transform 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: -webkit-transform 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: transform 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: transform 1s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.open #gloval-close {
+  -webkit-transform: translateY(calc(100vh - 50px));
+          transform: translateY(calc(100vh - 50px));
 }
 #container {
   z-index: 900;
