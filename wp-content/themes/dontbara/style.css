@@ -187,6 +187,10 @@ h1 {
   -webkit-transform: translateY(calc(100vh - 50px));
           transform: translateY(calc(100vh - 50px));
 }
+.open #gloval-close {
+  -webkit-transition-delay: .6s;
+          transition-delay: .6s;
+}
 #container {
   z-index: 900;
 }
@@ -214,10 +218,14 @@ h1 {
   padding-left: 0;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
-  -webkit-transition: -webkit-transform 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+/*   -webkit-transition: -webkit-transform 1s cubic-bezier(0.215, 0.61, 0.355, 1);
   transition: -webkit-transform 1s cubic-bezier(0.215, 0.61, 0.355, 1);
   transition: transform 1s cubic-bezier(0.215, 0.61, 0.355, 1);
-  transition: transform 1s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: transform 1s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 1s cubic-bezier(0.215, 0.61, 0.355, 1); */
+  -webkit-transition: -webkit-transform 0.4s ease-out;
+  transition: -webkit-transform 0.4s ease-out;
+  transition: transform 0.4s ease-out;
+  transition: transform 0.4s ease-out, -webkit-transform 0.4s ease-out;
   text-align: center;
 }
 .open #gloval-nav {
@@ -238,10 +246,10 @@ h1 {
 #gloval-nav ul li {
   -webkit-transform: translateY(-200px);
           transform: translateY(-200px);
-  -webkit-transition: -webkit-transform 1.3s ease;
-  transition: -webkit-transform 1.3s ease;
-  transition: transform 1.3s ease;
-  transition: transform 1.3s ease, -webkit-transform 1.3s ease;
+  -webkit-transition: -webkit-transform 1s ease;
+  transition: -webkit-transform 1s ease;
+  transition: transform 1s ease;
+  transition: transform 1s ease, -webkit-transform 1s ease;
   position: relative;
 }
 #gloval-nav ul li:after {
@@ -263,22 +271,10 @@ h1 {
   -webkit-transform: translateY(300px);
           transform: translateY(300px);
 }
-#gloval-nav ul li:nth-child(2) {
-  -webkit-transition-delay: .15s;
-          transition-delay: .15s;
-}
-#gloval-nav ul li:nth-child(3) {
-  -webkit-transition-delay: .3s;
-          transition-delay: .3s;
-}
-#gloval-nav ul li:nth-child(4) {
-  -webkit-transition-delay: .45s;
-          transition-delay: .45s;
-}
-#gloval-nav ul li:nth-child(5) {
-  -webkit-transition-delay: .6s;
-          transition-delay: .6s;
-}
+/* #gloval-nav ul li {
+  -webkit-transition-delay: .05s;
+          transition-delay: .05s;
+} */
 .open #gloval-nav li {
   -webkit-transform: translateY(0);
           transform: translateY(0);
